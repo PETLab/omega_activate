@@ -1,0 +1,139 @@
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+
+body {
+	background:url(../images/bg-illustration.jpg) no-repeat top center, url(../images/bg-pattern.jpg) #bbd052;
+}
+#zone-branding {
+	background:#f17122;
+	height: 40px;
+	text-align:right;
+}
+#zone-content {}
+#logo {
+	position:absolute;
+	margin-top:10px;
+}
+
+.html.front .section.section-content {
+	margin-top:225px;
+}
+.html.not-front .section.section-content {
+	margin-top:8%;
+}
+/*this shadow class is applied to all elements requiring box shadow*/
+/*class added as zone or region class in Drupal Theme Settings UI */
+.shadow {		
+	-moz-box-shadow: 5px 5px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 5px 5px rgba(0,0,0,0.3);
+	box-shadow: 5px 5px rgba(0,0,0,0.3);
+}
+
+
+/***** TOP NAVIGATION ***************/
+/*hide the simple tree menu used for mobile only*/
+#block-system-main-menu {
+	display:none;
+}
+/*show the fancy superfish menu*/
+#block-superfish-1 {
+	display:block !important;
+}
+ul.sf-navbar, #region-menu {
+	float:right;
+	margin:0;
+}
+
+ul.sf-navbar li, ul.sf-navbar li ul li {
+	background:url(../images/nav-divider.png) no-repeat right top;
+	/*-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+	transition: background 0.3s ease;*/
+}
+ul.sf-navbar li.last {
+	background:#c85a1a;
+}
+ul.sf-navbar li a {
+	padding: 13px 14px 12px;
+	color:#fff;
+	font-size:1.125em;
+	font-family: 'Ubuntu', sans-serif;
+	text-transform:uppercase;
+	font-weight:700;
+	text-decoration:none;
+}
+
+ul.sf-menu li.sfHover, ul.sf-menu li.active a, ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active,
+ul.sf-menu ul, ul.sf-navbar li ul li.last {
+	background-color:#22eef2;
+}
+ul.sf-navbar li ul li:hover {
+	background:url(../images/nav-divider.png) no-repeat right top;
+}
+ul.sf-menu li:hover > ul, ul.sf-menu li.sfHover > ul {
+	top:3.1em;
+	-moz-box-shadow: 5px 5px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 5px 5px rgba(0,0,0,0.3);
+	box-shadow: 5px 5px rgba(0,0,0,0.3);
+	
+}
+ul.sf-menu li ul li a {
+	font-size:0.9em;
+}
+
+ul.sf-menu li ul li a:hover {
+	color:#333;
+	background:url(../images/nav-divider.png) no-repeat right top #22eef2;
+}
+ul.sf-menu li ul li.last a:hover {
+	background:#22eef2;
+}
+ul.sf-menu li ul {
+	height:3.3em;
+	padding-top:.5em;
+}
+ul.sf-navbar li ul li a.active {
+	color:#333;
+}
+
+/*these are the level stars used only for first dropdown */
+ul.sf-navbar li.first ul li {
+	text-align:center;
+}
+ul.sf-navbar li.first ul li.first {
+	width:100px;
+	text-align:center;
+}
+ul.sf-navbar li.first ul li.first a {
+	padding-top:5px;
+}
+ul.sf-navbar li.first ul li.sf-item-2 a {
+	background:url(../images/rookie-stars.png) no-repeat center 3px;
+	padding-top:18px;
+}
+ul.sf-navbar li.first ul li.sf-item-3 a {
+	background:url(../images/apprentice-stars.png) no-repeat center 3px;
+	padding-top:18px;
+}
+ul.sf-navbar li.first ul li.sf-item-4 a {
+	background:url(../images/champion-stars.png) no-repeat center 3px #22eef2;
+	padding-top:18px;
+}
+
+/***** END TOP NAVIGATION ***************/
+
+
+/*footer for non-mobile views*/
+.footer-left {
+	width:57.29166%; /* 550px/960px */
+	float:left;
+}
+.footer-right {
+	width:40.25%; /* 390px/960px */
+	float:right;
+}
+
+
+
+/* --- Float Hack --- */
+.cf:after  { content: ".";  display: block; height: 0; overflow:hidden; clear: both; visibility: hidden; }

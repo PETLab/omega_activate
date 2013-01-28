@@ -1,0 +1,226 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+body {
+	background: url(../images/bg-pattern.jpg) #bbd052;
+}
+
+#logo {
+	position:relative;
+	width:100%;
+	margin-top:2em;
+}
+#logo img {width:100%}
+
+h1 {
+	line-height:normal;
+	letter-spacing:1px;
+}
+h2 {
+	font-size:1.75em !important;
+}
+
+/*^*^*^*^*^*^*^* LINK STYLES *^*^*^*^*^*^*^*/
+a:link {text-decoration:none; color:#f46f21;}
+a:visited {text-decoration:none; color:#f46f21;}
+a:active {text-decoration:none; color:#f46f21;}
+a:hover {text-decoration: underline; color:#22eef2;}
+
+a.button:link, a.button:visited, a.button:active, a.button:hover {
+	color:#fff;
+	text-decoration:none;
+}
+
+/* no ugly tabs please */
+.tabs, .breadcrumb { display:none; }
+
+/*no ugly bullets either!*/
+ul li.leaf {
+	list-style-image:url(../images/orange-dot.png);
+	list-style-type: disc;
+}
+
+/*^*^*^*^*^*^* END LINK STYLES *^*^*^*^*^*^*/
+
+/***** TOP NAVIGATION for mobile only ***************/
+/*show simple tree menu*/
+/*hide the fancy superfish menu*/
+div#block-superfish-1 {
+	display:none;
+}
+#block-system-main-menu {
+	display:block;
+}
+#block-system-main-menu .content {
+	background-color: rgba(255, 255, 255, 0.95);
+	margin-bottom:15px;
+	-moz-box-shadow: 5px 5px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 5px 5px rgba(0,0,0,0.3);
+	box-shadow: 5px 5px rgba(0,0,0,0.3);
+}
+#block-system-main-menu .content ul {
+	margin:20px;
+	padding-top: 10px;
+}
+#block-system-main-menu .content ul a {
+	font-size:1em;
+	font-family: 'Ubuntu', sans-serif;
+	text-transform:uppercase;
+	font-weight:700;
+	text-decoration:none;
+}
+#block-system-main-menu .content ul li ul {
+	margin:0;
+	padding:0;
+}
+/***** END TOP NAVIGATION ***************/
+
+
+
+/* Content boxes */
+.region-sidebar-first .block,
+.region-sidebar-second .block,
+.not-front .region-content-inner,
+.front .region-content-inner .block {
+	background-color: rgba(255, 255, 255, 0.95);
+	margin-bottom:15px;
+	-moz-box-shadow: 5px 5px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 5px 5px rgba(0,0,0,0.3);
+	box-shadow: 5px 5px rgba(0,0,0,0.3);
+}
+
+/*pad UL lists within the content area only*/
+#zone-content ul {margin:0 0 20px 20px;}
+/*but NOT the nested UL lists */
+#zone-content ul li ul {margin:0;}
+	
+.front h1#page-title {
+	display:none;
+}
+
+#page-title,
+.block-title,
+.block .content{
+	/*display:none;*/
+	padding:10px;
+}
+.block .content .content,
+#section-header .block .content {
+	padding:0
+}
+
+.region-sidebar-first-inner .block img,
+.region-sidebar-second-inner .block img,
+.front .region-content-inner .block img {
+	width:100%;
+}
+.block h1, .block h2, .block h3, .block h4,
+.block-title, #page-title {
+	line-height:normal;
+	text-transform:uppercase;
+	color:#f46f21;
+	font-family: 'Bree Serif', serif;
+	font-weight:400;
+}
+.block h2 {
+	line-height:1em;
+}
+
+/*footer block overwrights */
+.region-footer-first-inner .block, .region-footer-second-inner .block {
+	background:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	font-size:1em;
+	text-transform:uppercase;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight:300;
+	color:#71821c;
+	line-height:normal;
+}
+.region-footer-first-inner .block ul {
+	list-style-type: none;
+}
+
+.region-footer-first-inner .block li {
+	display:inline;
+	background:url(../images/green-dot.png) no-repeat right 9px;
+	padding-right:10px;
+}
+.region-footer-first-inner .block li.last {
+	background:none;
+}
+.region-footer-first-inner .block a {
+	color:#71821c;
+    font-weight:700;
+}
+.region-footer-first-inner .block {
+	border-top:1px solid #9ab02d;
+	margin: 20px 0 0 0;
+}
+.region-footer-second-inner .block {
+	padding-left:5px;
+	border-bottom:1px solid #9ab02d;
+	margin-bottom:20px;
+}
+/*mobile only*/
+.footer-left, .footer-right {
+	width:100%;
+	float:none;
+}
+.footer-right {
+	text-align:right;
+}
+
+#zone-footer img {
+	opacity:0.3;
+	filter:alpha(opacity=30); /* For IE8 and earlier */
+}
+
+/* END Content Boxes */
+
+
+/*^*^*^*^*^*^*^* FORMS *^*^*^*^*^*^*^*/
+textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+	padding:5px !important;
+	width:100% !important;
+	height: auto;
+	font-size:1.1em;
+
+}
+label {
+	margin-bottom:5px;
+}
+button, .button, input[type="reset"], input[type="submit"], input[type="button"] {
+    background: url(../images/arrow.png) no-repeat right 10px #f46f21;
+    border:0 none;
+    color: #FFF;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:700;
+    font-size:1.1em;
+    text-shadow:none;
+    text-transform:uppercase;
+    border-radius:0;
+    width: auto;
+    padding: 6px 25px 6px 15px;
+    letter-spacing:1px;
+    margin:10px 0;
+    
+    -moz-box-shadow: 3px 3px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 3px 3px rgba(0,0,0,0.3);
+	box-shadow: 3px 3px rgba(0,0,0,0.3);
+	
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
+	transition: background 0.3s ease;
+}
+.form-actions input:hover, a.button:hover {
+   background: url(../images/arrow.png) no-repeat right 10px #22eef2 !important;
+}
+/*login form list overwrites*/
+#zone-content .user-login-block .item-list ul,
+#zone-content .user-login-block .item-list ul li { margin:0 !important; }
+
+/*^*^*^*^*^*^* END FORMS *^*^*^*^*^*^*/
