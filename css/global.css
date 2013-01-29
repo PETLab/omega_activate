@@ -31,7 +31,7 @@ a.button:link, a.button:visited, a.button:active, a.button:hover {
 }
 
 /* no ugly tabs please */
-.tabs, .breadcrumb { display:none; }
+.tabs, .breadcrumb, footer.submitted { display:none; }
 
 /*no ugly bullets either!*/
 ul li.leaf {
@@ -172,7 +172,7 @@ div#block-superfish-1 {
 	text-align:right;
 }
 
-#zone-footer img {
+#zone-footer .footer-right img {
 	opacity:0.3;
 	filter:alpha(opacity=30); /* For IE8 and earlier */
 }
@@ -205,7 +205,7 @@ button, .button, input[type="reset"], input[type="submit"], input[type="button"]
     width: auto;
     padding: 6px 25px 6px 15px;
     letter-spacing:1px;
-    margin:10px 0;
+    margin: 10px 10px 0 0;
     
     -moz-box-shadow: 3px 3px rgba(0,0,0,0.3);
 	-webkit-box-shadow: 3px 3px rgba(0,0,0,0.3);
@@ -217,10 +217,62 @@ button, .button, input[type="reset"], input[type="submit"], input[type="button"]
 	transition: background 0.3s ease;
 }
 .form-actions input:hover, a.button:hover {
-   background: url(../images/arrow.png) no-repeat right 10px #22eef2 !important;
+   background: url(../images/arrow.png) no-repeat right 10px #00adef !important;
+}
+.form-textarea-wrapper div, div.nicEdit-main {
+	width:100% !important;
+	height:auto !important;
 }
 /*login form list overwrites*/
 #zone-content .user-login-block .item-list ul,
 #zone-content .user-login-block .item-list ul li { margin:0 !important; }
 
 /*^*^*^*^*^*^* END FORMS *^*^*^*^*^*^*/
+
+/*^*^*^*^*^*^*^* jcarousel overwrites *^*^*^*^*^*^*^*/
+.jcarousel-skin-default .jcarousel-container-horizontal {
+	padding:0;
+	width:100%;
+	overflow:hidden;
+	margin-bottom:20px;
+}
+.jcarousel-skin-default .jcarousel-next, .jcarousel-skin-default .jcarousel-prev {
+	 background-image: url("/sites/all/themes/omega_activate/images/arrows.png");
+}
+.jcarousel-skin-default .jcarousel-prev-horizontal {
+	/*left:0;*/
+	top:35px;
+}
+.jcarousel-skin-default .jcarousel-next-horizontal {
+	right:0;
+	top:35px;
+}
+/*^*^*^*^*^*^* END jcarousel *^*^*^*^*^*^*/
+
+/************ GAMES **********************/
+.games-items{
+	width:30%;
+	float:left;
+}
+.games-items .views-field.views-field-title {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.games-items .views-field.views-field-field-game-screenshot img {
+	width:100%;
+	height:auto;
+}
+.games-item-download-link img {
+	display:none;
+}
+
+/*********** END GAMES ******************/
+
+
+#zone-content ul.pager {
+	margin: 0 0 20px 0;
+}
+.content .field-type-image .field-item {
+	/*text-align:center;*/
+}
+
