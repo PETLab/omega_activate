@@ -367,15 +367,15 @@ button, .button, input[type="reset"], input[type="submit"], input[type="button"]
 }
 
 .game-selector .col-left {
-	width:40%;
-	margin-right:2%;
-	float:left;
+	width:100%;
+	margin-right:0;
+	float:none;
 }
 .game-selector .col-right {
-	width:55%;
-	float:left;
+	width:100%;
+	float:none;
 }
-game-selector .col-left img {
+.game-selector .col-left img {
 	width:100% !important;
 	height:auto !important;
 }

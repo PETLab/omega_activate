@@ -128,6 +128,18 @@ ul.sf-navbar li.first ul li.sf-item-4 a {
 	margin-right:10px;
 }
 
+
+.game-selector .col-left {
+	width:40%;
+	margin-right:2%;
+	float:left;
+}
+.game-selector .col-right {
+	width:55%;
+	float:left;
+}
+
+
 /*footer for non-mobile views*/
 .footer-left {
 	width:57.29166%; /* 550px/960px */
