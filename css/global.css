@@ -361,6 +361,24 @@ button, .button, input[type="reset"], input[type="submit"], input[type="button"]
 	
 /*********** END GAMES ******************/
 
+.game-selector {
+	padding:2em 0 2em 0;
+	border-bottom:1px dashed #ccc;
+}
+
+.game-selector .col-left {
+	width:40%;
+	margin-right:2%;
+	float:left;
+}
+.game-selector .col-right {
+	width:55%;
+	float:left;
+}
+game-selector .col-left img {
+	width:100% !important;
+	height:auto !important;
+}
 
 #zone-content ul.pager {
 	margin: 0 0 20px 0;
