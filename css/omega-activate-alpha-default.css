@@ -122,6 +122,11 @@ ul.sf-navbar li.first ul li.sf-item-4 a {
 
 /***** END TOP NAVIGATION ***************/
 
+.view.view-games .views-row {
+	display:inline-block;
+	vertical-align:top;
+	margin-right:10px;
+}
 
 /*footer for non-mobile views*/
 .footer-left {

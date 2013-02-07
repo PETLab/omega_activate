@@ -23,7 +23,7 @@ h2 {
 a:link {text-decoration:none; color:#f46f21;}
 a:visited {text-decoration:none; color:#f46f21;}
 a:active {text-decoration:none; color:#f46f21;}
-a:hover {text-decoration: underline; color:#22eef2;}
+a:hover {text-decoration: underline; color:#00ADEF;}
 
 a.button:link, a.button:visited, a.button:active, a.button:hover {
 	color:#fff;
@@ -103,6 +103,11 @@ div#block-superfish-1 {
 	/*display:none;*/
 	padding:10px;
 }
+h1#page-title {
+	margin:0;
+	line-height:1em;
+}
+
 .block .content .content,
 #section-header .block .content {
 	padding:0
@@ -120,6 +125,7 @@ div#block-superfish-1 {
 	color:#f46f21;
 	font-family: 'Bree Serif', serif;
 	font-weight:400;
+	padding-bottom:0;
 }
 .block h2 {
 	line-height:1em;
@@ -266,6 +272,93 @@ button, .button, input[type="reset"], input[type="submit"], input[type="button"]
 	display:none;
 }
 
+/**** game listings */
+.view.view-games .views-exposed-form {
+	margin-bottom:2em;
+}
+.view.view-games .views-row {
+	display:block;
+	width:100%;
+	margin:0 0 10px 0;
+	background:#ededed;
+	min-height:100px;
+
+}
+.view.view-games .views-row .views-field-field-game-screenshot {
+	max-height:100px;
+	overflow:hidden;
+	margin-right:10px;
+	padding:5px;
+	float:left;
+}
+.view.view-games .views-row .views-field-title {
+	font-size:1.2em;
+	line-height:normal;
+	font-family: 'Bree Serif',serif;
+}
+.view.view-games .views-row .views-field-name {
+	font-size:0.875em;
+	font-weight:normal;
+}
+/**** individual agmes page */
+.node-type-game .node-game .field-name-field-game-screenshot .field-label {
+	display:none;
+}
+.node-type-game .node-game .field-name-field-game-screenshot .field-item {
+	margin-right:10px;
+}
+.node-type-game .node-game .field-name-field-game-screenshot .field-item img {
+	width:100% !important;
+	height:auto !important;
+}
+.node-type-game .node-game .field-name-field-game-screenshot {
+	float:left;
+	width:35%;
+}
+.node-type-game .node-game .field-name-field-rating {
+	float:left;
+	width:65%;
+}
+.node-type-game .node-game .field-name-body {
+	padding-top:5em;
+}
+.node-type-game .node-game nav.links.node-links {
+	display:none;
+}
+
+#comments,
+#comments h2.title.comment-form  {
+	border-top:1px dotted #ccc;
+	padding-top:1em;
+}
+#comments article header h3 {
+	padding:0;
+	margin:0;
+	font-size:1.2em;
+}
+#comments article footer.comment-submitted {
+	font-style:italic;
+	padding-bottom:5px;
+}
+#comments article nav.links.comment-links {
+	padding:1em 0 1em 0;
+}
+
+
+.flex-direction-nav li .prev {
+    left: -3px;
+}
+.flex-direction-nav li a {
+    background: url(../images/bg_direction_nav.png) no-repeat;
+	top: 35%;
+	height: 45px;
+	width: 35px;   
+}
+.flex-direction-nav li .next {
+    background-position: -35px 0;
+    right: -8px;
+}
+	
 /*********** END GAMES ******************/
 
 
