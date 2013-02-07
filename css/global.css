@@ -417,3 +417,63 @@ button, .button, input[type="reset"], input[type="submit"], input[type="button"]
 .content .field-type-image .field-item {
 	/*text-align:center;*/
 }
+
+/*codex */
+.quicktabs-tabs {
+	margin:0 0 2em 0 !important;
+}
+.quicktabs-tabs li a {
+	padding:5px;
+}
+.quicktabs_main .view-content .views-summary {
+	font-size:1.3em;
+	font-family: 'Bree Serif', serif;
+	font-weight:400;
+}
+.quicktabs_main .views-row {
+	margin-top:0.5em;
+	background:#ededed;
+	padding:5px;
+}
+.quicktabs_main .views-row span a {
+	font-size:1.3em;
+	font-family: 'Ubuntu', sans-serif;
+	text-transform:uppercase;
+	font-weight:700;
+}
+.quicktabs_main .views-row .views-field-field-codex-topic {
+	color:#999;
+}
+
+.quicktabs_main .views-exposed-form .views-exposed-widget {
+	float:none;
+}
+.quicktabs_main .views-exposed-form .views-exposed-widget.views-submit-button {
+	margin-bottom:2em;
+}
+.quicktabs_main .views-exposed-form .bef-checkboxes .form-type-bef-checkbox {
+	display:inline-block;
+	margin-right:10px;
+}
+.quicktabs_main .views-exposed-form label {
+	font-weight:normal;
+}
+.quicktabs_main input {
+	vertical-align:baseline !important;
+}
+.node-codex-item .field-name-body {
+	margin-right:0;
+}
+
+.node-codex-item .field-name-field-image,
+.node-codex-item .field-name-body {
+	float:none;
+	width:100%;
+}
+.node-codex-item .field-name-field-image img {
+	width:100% !important;
+	height:auto !important;
+}
+.node-codex-item ol {
+	padding-left:2em !important;
+}
