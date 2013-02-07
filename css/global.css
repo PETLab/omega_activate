@@ -122,10 +122,11 @@ h1#page-title {
 .block-title, #page-title {
 	line-height:normal;
 	text-transform:uppercase;
-	color:#f46f21;
+	color:#3f3f3f;
 	font-family: 'Bree Serif', serif;
 	font-weight:400;
 	padding-bottom:0;
+	letter-spacing: 0.02em;
 }
 .block h2 {
 	line-height:1em;
@@ -323,7 +324,31 @@ button, .button, input[type="reset"], input[type="submit"], input[type="button"]
 	padding-top:5em;
 }
 .node-type-game .node-game nav.links.node-links {
-	display:none;
+	/*display:none;*/
+	margin:2em 0;
+}
+.node-links ul,
+.comment-links ul {
+	margin:0 !important;
+}
+.node-links ul li,
+.comment-links ul li {
+	padding:0 !important;
+}
+.node-links ul li a, .comment-links ul li a {
+	float:none;
+	display:inline;
+	margin:0;
+}
+.field-name-field-game-file {
+	clear:left;
+}
+.field-name-field-play-game-file {
+	clear:left;
+	margin-top:2em;
+	text-align:center;
+	padding:2em 0 2em 0;
+	background:#EDEDED;
 }
 
 #comments,
@@ -331,10 +356,16 @@ button, .button, input[type="reset"], input[type="submit"], input[type="button"]
 	border-top:1px dotted #ccc;
 	padding-top:1em;
 }
+#comments .links.comment-links {
+	display:none;
+}
 #comments article header h3 {
 	padding:0;
 	margin:0;
 	font-size:1.2em;
+}
+#comments article {
+	margin-bottom:2em;
 }
 #comments article footer.comment-submitted {
 	font-style:italic;
@@ -363,7 +394,7 @@ button, .button, input[type="reset"], input[type="submit"], input[type="button"]
 
 .game-selector {
 	padding:2em 0 2em 0;
-	border-bottom:1px dashed #ccc;
+	border-top:1px dashed #ccc;
 }
 
 .game-selector .col-left {
@@ -386,4 +417,3 @@ button, .button, input[type="reset"], input[type="submit"], input[type="button"]
 .content .field-type-image .field-item {
 	/*text-align:center;*/
 }
-
