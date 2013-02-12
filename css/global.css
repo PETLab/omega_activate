@@ -477,3 +477,31 @@ button, .button, input[type="reset"], input[type="submit"], input[type="button"]
 .node-codex-item ol {
 	padding-left:2em !important;
 }
+
+/* curricula tables */
+#feature-table { width: 100%; margin: 0 auto; border-collapse: collapse;}
+
+#feature-table th { padding-bottom: 14px !important; vertical-align: bottom; font-family: 'Ubuntu', sans-serif; font-weight:700; text-transform:uppercase; color:#333 }
+#feature-table th span { position: absolute; top: -9999px; left: -9999px; }
+
+#feature-table td,
+#feature-table th { padding: 8px 5px; text-align: center; border-left: 1px solid white; border-right: 1px solid white; line-height:normal }
+#feature-table th.header-activity { width:30%; text-align:left;}
+#feature-table .final-row td { padding: 24px 5px; }
+
+.activity   { background-color: #d5e4bc; }
+.time    { background-color: #c1dcb7; }
+.systems { background-color: #bad6c8; }
+.games     { background-color: #bbd3dc; }
+.programming     { background-color: #a6d4f1;   }
+.digital     { background-color: #8fd3f4;  }
+.non-digital     { background-color: #acc4eb;  }
+
+tr.odd .table-col-1 { background-color: #edf3e2; background-color: hsla(85,  30%, 94%, 1); }
+tr.odd .table-col-2 { background-color: #edf3e2; background-color: hsla(110, 30%, 94%, 1); }
+tr.odd .table-col-3 { background-color: #edf3e2; background-color: hsla(150, 30%, 94%, 1); }
+tr.odd .table-col-4 { background-color: #e2ecf0; background-color: hsla(190, 30%, 94%, 1); }
+tr.odd .table-col-5 { background-color: #e4f1f9; background-color: hsla(203, 63.6364%, 93.5294%, 1.0000) }
+tr.odd .table-col-6 { background-color: #d5ebf5; background-color: hsla(199, 61.5385%, 89.8039%, 1.0000) }
+tr.odd .table-col-7 { background-color: #e4eaf3; background-color: hsla(216, 38.4615%, 92.3529%, 1.0000) }
+.table-col-1 {text-align:left !important; }
