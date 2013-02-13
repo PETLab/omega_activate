@@ -8,3 +8,6 @@ ul.sf-navbar li a  {
 	/*becuase we're reducing font-size above, gotta pad this a little more too */
 	padding-bottom:14px;
 }
+.footer-left img {
+	width:80%;
+}

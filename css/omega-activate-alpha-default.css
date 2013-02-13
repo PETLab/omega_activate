@@ -150,7 +150,9 @@ ul.sf-navbar li.first ul li.sf-item-4 a {
 	float:right;
 }
 
-
+.footer-left img {
+	width:auto;
+}
 
 /* --- Float Hack --- */
 .cf:after  { content: ".";  display: block; height: 0; overflow:hidden; clear: both; visibility: hidden; }

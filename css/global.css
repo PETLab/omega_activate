@@ -505,3 +505,7 @@ tr.odd .table-col-5 { background-color: #e4f1f9; background-color: hsla(203, 63.
 tr.odd .table-col-6 { background-color: #d5ebf5; background-color: hsla(199, 61.5385%, 89.8039%, 1.0000) }
 tr.odd .table-col-7 { background-color: #e4eaf3; background-color: hsla(216, 38.4615%, 92.3529%, 1.0000) }
 .table-col-1 {text-align:left !important; }
+
+.footer-left img {
+	width:100%;
+}
