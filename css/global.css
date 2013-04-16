@@ -34,7 +34,7 @@ a.button:link, a.button:visited, a.button:active, a.button:hover {
 }
 
 /* no ugly tabs please */
-.tabs, .breadcrumb, footer.submitted { display:none; }
+.tabs, footer.submitted { display:none; }
 
 /*no ugly bullets either!*/
 ul li.leaf {
@@ -96,7 +96,7 @@ div#block-superfish-1 {
 }
 
 /*pad UL lists within the content area only*/
-#zone-content ul {margin:0 0 20px 20px;}
+#zone-content ul, #zone-content ol {margin:0 0 20px 20px;}
 /*but NOT the nested UL lists */
 #zone-content ul li ul {margin:0;}
 	
@@ -603,7 +603,166 @@ tr.odd .table-col-7 { background-color: #e4eaf3; background-color: hsla(216, 38.
 	padding-top:20px;
 	clear:both;
 }
- /**^*^*^*^**^** Challenge step instructions ^*^*^*^*^*^*^**^/
+ /**^*^*^*^**^** Challenge step instructions ^*^*^*^*^*^*^**^*/
+ .view.view-instructions {
+	 border-top:1px dashed #ccc;
+	 padding-top:10px;
+ }
+ #challenge_instructions_steps {
+	 clear:both;
+ }
+ #challenge_instructions_steps .steps-header,
+ #challenge_instructions_steps .steps-pager {
+	 padding:10px 0 10px 3px;
+ }
+ #challenge_instructions_steps .steps-pager {
+	 font-size:1em;
+	 text-transform:uppercase;
+	 font-weight:700;
+ }
+ .print-instructions {
+	 display:none; /* hide for mobile */
+	 float:none;
+ }
+.challenge_instructions_desc{
+	clear:both;
+ }
+ .challenge_instructions_img img {
+	 width:100% !important;
+	 height:auto !important;
+ }
+ #block-views-instructions-ci-posting .view-content,
+ .view.view-print-instructions .views-row {
+	 margin-bottom:20px;
+	 padding-bottom:20px;
+	 border-bottom:1px dashed #ccc;
+ }
+ 
+ #block-views-instructions-ci-key-concepts ul.pager {
+	 display:none; /* don't need pagiantion on the key concepts block */
+ }
  
  
- 
+ /* PAGINATION */
+ul.pager {border:0; margin:0; padding:0; background:none}
+ul.pager li {border:none !important;}
+ul.pager li.first, ul.pager li.first a, ul.pager li.first a:hover {
+    border-radius:0;
+}
+ul.pager li.pager-first,
+ul.pager li.pager-last {
+	display:none;
+}
+ul.pager li{
+	border:0; margin:0; padding:0;
+	font-size:1.5em;
+	list-style:none;
+	margin-right:2px;
+}
+ul.pager li a{
+	border:solid 1px #F46F21;
+	margin-right:2px;
+}
+ul.pager .pager-next {
+	position:relative;
+	top:auto;
+	right:auto;
+}
+ul.pager .pager-next a,
+ul.pager .pager-previous a {
+	width:auto;
+}
+ul.pager .pager-current{
+	background:#00ADEF;
+	color:#FFFFFF;
+	display:block;
+	float:left;
+	margin-right:2px;
+}
+ul.pager a:link,
+ul.pager a:visited {
+	color:#F46F21;
+	display:block;
+	float:left;
+	padding:3px 6px;
+	text-decoration:none;
+}
+#ul.pager a:hover{
+	border:solid 1px #00ADEF
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

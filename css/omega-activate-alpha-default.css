@@ -181,7 +181,14 @@ ul.sf-navbar li.first ul li.sf-item-4 a {
 .make-a-game-intro {
 	width:65%;
 }
-
+.print-instructions {
+	 display:block; /* show for desktop */
+	 background-image:url(../images/icons-sprite.png);
+	 background-repeat:no-repeat;
+	 background-position:0 -48px;
+	 padding-left:20px;
+	 float:right;
+ }
 
 
 /* --- Float Hack --- */
