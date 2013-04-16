@@ -4,3 +4,7 @@
 .view.view-games .views-row {
 	width:285px;
 }
+/* (MAKE-A-GAME) formerly CHALLENGES*/
+.make-a-game.desc {
+	width:500px;
+}

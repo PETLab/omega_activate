@@ -120,6 +120,8 @@ ul.sf-navbar li.first ul li.sf-item-4 a {
 	padding-top:18px;
 }
 
+
+
 /***** END TOP NAVIGATION ***************/
 
 .view.view-games .views-row {
@@ -153,6 +155,34 @@ ul.sf-navbar li.first ul li.sf-item-4 a {
 .footer-left img {
 	width:auto;
 }
+
+/* (MAKE-A-GAME) formerly CHALLENGES*/
+.make-a-game.desc,
+.make-a-game-instructions.desc {
+	float:left;
+}
+.make-a-game-instructions.desc {
+	width:57%;
+}
+.make-a-game-badge, .make-a-game-intro {
+	display:inline-block;
+	vertical-align:middle;
+	text-align:left;
+	font-size:1em;
+}
+.make-a-game-badge {
+	width:30%;
+	margin-right:3%;
+}
+.make-a-game-badge img {
+	width:100%;
+	height:auto;
+}
+.make-a-game-intro {
+	width:65%;
+}
+
+
 
 /* --- Float Hack --- */
 .cf:after  { content: ".";  display: block; height: 0; overflow:hidden; clear: both; visibility: hidden; }

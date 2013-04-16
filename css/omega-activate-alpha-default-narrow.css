@@ -11,3 +11,10 @@ ul.sf-navbar li a  {
 .footer-left img {
 	width:80%;
 }
+/* (MAKE-A-GAME) formerly CHALLENGES*/
+.make-a-game.desc {
+	width:340px;
+}
+.make-a-game-intro {
+	font-size:0.875em;
+}

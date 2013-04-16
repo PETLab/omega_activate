@@ -1,7 +1,10 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,700);
 body {
 	background: url(../images/bg-pattern.jpg) #bbd052;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
 }
 
 #logo {
@@ -40,6 +43,10 @@ ul li.leaf {
 }
 
 /*^*^*^*^*^*^* END LINK STYLES *^*^*^*^*^*^*/
+
+#block-system-main {
+	clear:both
+}
 
 /***** TOP NAVIGATION for mobile only ***************/
 /*show simple tree menu*/
@@ -509,3 +516,94 @@ tr.odd .table-col-7 { background-color: #e4eaf3; background-color: hsla(216, 38.
 .footer-left img {
 	width:100%;
 }
+
+/* delta page titles */
+#block-delta-blocks-page-title {
+	display:inline-block;
+	float:left;
+}
+#block-delta-blocks-page-title h1{
+	padding:0
+}
+/* cookie sselect */
+#block-activate-module-am-software-select-bk {
+	text-align:left;
+	display:inline-block;
+	float:right;
+}
+.cookie-select {
+	padding-left:25px;
+}
+.cookie-select.active {
+	font-weight:bold;
+	background:url(../images/pacman.jpg) no-repeat 0 4px;
+	color:#799a32;
+}
+/* end cookie */
+
+/* (MAKE-A-GAME) formerly CHALLENGES*/
+
+.view.view-challenge-levels .view-header {
+	margin-bottom:1em;
+	font-size:1.5em;
+	text-transform:uppercase;
+	font-weight:300;
+}
+.view.view-challenge-levels .views-row {
+	border-top:1px dashed #ccc;
+	padding-top:20px;
+}
+.make-a-game-badge {
+	margin-bottom:20px;
+}
+.make-a-game-badge, .make-a-game-intro {
+	display:block;	
+	text-align:center;
+	width:100%;
+}
+.make-a-game-badge img {
+	width:50%;
+	height:auto;
+}
+.make-a-game.thumb {
+	float:left;
+	width:80px;
+	margin:0 20px 10px 0;
+	-moz-box-shadow: 5px 5px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 5px 5px rgba(0,0,0,0.3);
+	box-shadow: 5px 5px rgba(0,0,0,0.3);
+	
+}
+.make-a-game-instructions.thumb {
+	width:40%;
+	float:left;
+	-moz-box-shadow: 5px 5px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 5px 5px rgba(0,0,0,0.3);
+	box-shadow: 5px 5px rgba(0,0,0,0.3);
+	margin:5px 3% 10px 0;
+
+}
+.make-a-game-instructions.thumb img {
+	width:100% !important;
+	height:auto !important;
+}
+.make-a-game-instructions.desc {
+	width:100%;
+	float:none;
+}
+.make-a-game.desc {
+	float:none;
+	width:100%;
+}
+.link.challenge-instructions-resource,
+.link.challenge-instructions-path {
+	margin-bottom:20px;
+}
+.view.view-challenge-overview .view-content {
+	padding-top:20px;
+	clear:both;
+}
+ /**^*^*^*^**^** Challenge step instructions ^*^*^*^*^*^*^**^/
+ 
+ 
+ 
