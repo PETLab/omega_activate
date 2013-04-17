@@ -1,6 +1,6 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,700);
 body {
 	background: url(../images/bg-pattern.jpg) #bbd052;
 	font-family: 'Open Sans', sans-serif;
