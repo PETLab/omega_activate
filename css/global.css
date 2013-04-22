@@ -401,6 +401,13 @@ p.play-a-game-intro {
     background-position: -35px 0;
     right: -8px;
 }
+.flexslider {
+	background: none !important;
+	border:none !important;
+}
+.flexslider ul {
+	margin:0 !important;
+}
 	
 /*********** END GAMES ******************/
 
