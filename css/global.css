@@ -402,13 +402,12 @@ p.play-a-game-intro {
     right: -8px;
 }
 .flexslider {
-	background: none !important;
-	border:none !important;
+	border:none;
+	border-radius:0;
 }
-.flexslider ul {
+ul#flexslider_views_slideshow_games-block {
 	margin:0 !important;
 }
-	
 /*********** END GAMES ******************/
 
 .game-selector {
