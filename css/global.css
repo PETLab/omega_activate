@@ -95,7 +95,7 @@ div#block-superfish-1 {
 }
 
 /*pad UL lists within the content area only*/
-#zone-content ul, #zone-content ol {margin:0 0 20px 20px;}
+#block-system-user-menu ul, #block-system-user-menu ol {margin:0 0 20px 20px;}
 /*but NOT the nested UL lists */
 #zone-content ul li ul {margin:0;}
 	
@@ -405,9 +405,7 @@ p.play-a-game-intro {
 	border:none;
 	border-radius:0;
 }
-ul#flexslider_views_slideshow_games-block {
-	margin:0 !important;
-}
+
 /*********** END GAMES ******************/
 
 .game-selector {
