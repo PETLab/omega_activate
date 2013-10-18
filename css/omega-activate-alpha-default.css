@@ -119,6 +119,9 @@ ul.sf-navbar li.first ul li.sf-item-4 a {
 	background:url(../images/champion-stars.png) no-repeat center 3px #00adef;
 	padding-top:18px;
 }
+ul.menu li {
+	margin:0;
+}
 
 
 
