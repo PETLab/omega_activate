@@ -65,7 +65,8 @@ ul.sf-navbar li a {
 
 ul.sf-menu li.sfHover, ul.sf-menu li.active a, ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active,
 ul.sf-menu ul, ul.sf-navbar li ul li.last, ul.sf-navbar li a.active {
-	background-color:#00adef;
+	/*background-color:#00adef;*/
+	background:url(../images/nav-divider.png) no-repeat right top #00adef;
 }
 ul.sf-navbar li ul li:hover {
 	background:url(../images/nav-divider.png) no-repeat right top;
@@ -94,6 +95,7 @@ ul.sf-menu li ul {
 }
 ul.sf-navbar li ul li a.active {
 	color:#333;
+	
 }
 
 /*these are the level stars used only for first dropdown */
@@ -191,6 +193,11 @@ ul.menu li {
 	 background-position:0 -48px;
 	 padding-left:20px;
 	 float:right;
+ }
+ 
+ /* add a game */
+ #edit-field-play-game-file-und-0-format {
+	 display:none;
  }
 
 
