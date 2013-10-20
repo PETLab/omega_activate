@@ -229,6 +229,7 @@ button, .button, input[type="reset"], input[type="submit"], input[type="button"]
 	-o-transition: background 0.3s ease;
 	transition: background 0.3s ease;
 }
+input#edit-preview { display:none; }
 .form-actions input:hover, a.button:hover {
    background: url(../images/arrow.png) no-repeat right 10px #00adef !important;
 }
