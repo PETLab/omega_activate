@@ -477,6 +477,9 @@ p.play-a-game-intro {
 .quicktabs_main input {
 	vertical-align:baseline !important;
 }
+ul.quicktabs-tabs.quicktabs-style-zen {
+	clear:both;
+}
 .node-codex-item .field-name-body {
 	margin-right:0;
 }
